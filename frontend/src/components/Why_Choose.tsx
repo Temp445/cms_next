@@ -5,8 +5,17 @@ import { CheckCircle } from 'lucide-react'
 import Image from 'next/image'
 import CMS from '../assets/CMS3.png'
 import icon from '../assets/icon.png'
+import { useRouter } from 'next/navigation'
+
 
 const Why_Choose = () => {
+ 
+  const router = useRouter();
+
+  const navigateToSection = ()=>{
+    router.push('/#features')
+  }
+
   return (
     <section className="py-16 container mx-auto">
       <div className="container mx-auto px-4">
@@ -19,10 +28,9 @@ const Why_Choose = () => {
                   alt="ACE CMS" 
                   className="object-cover w-full h-full rounded-lg" 
                 />
-<div className="absolute w-20 h-20 rounded-full bg-gray-700 z-20 -right-5 -bottom-5 flex items-center justify-center">
-  <div className='absolute bg-white w-14 h-14 rounded-full z-30 flex items-center justify-center'><Image src={icon} alt="iso" className="w-10 h-10 z-40 -rotate-12 absolute" /></div>
+<div className="absolute w-16 h-16 rounded-full bg-gray-700 z-20 -right-5 -bottom-5 flex items-center justify-center">
+  <div className='absolute bg-white w-12 h-12 rounded-full z-30 flex items-center justify-center'><Image src={icon} alt="iso" className="w-10 h-10 z-40 -rotate-12 absolute" /></div>
 </div>
-
               </div>
             </div>
           
@@ -37,7 +45,7 @@ const Why_Choose = () => {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-              Master your <span className='bg-clip-text text-transparent bg-gradient-to-bl from-indigo-600 to-red-300'>calibration</span>,  impress your auditors
+               ACE CMS – Smart <span className='bg-clip-text text-transparent bg-gradient-to-bl from-indigo-600 to-red-300'>Calibration Management</span>Made Simple
               <span className="text-blue-600"></span>
             </h2>
             
@@ -64,7 +72,7 @@ const Why_Choose = () => {
               ))}
             </div>
             
-            <button className="mt-6 bg-gradient-to-tr from-blue-500 to-violet-500 hover:bg-blue-700 text-white font-medium py-2 px-5 rounded-3xl shadow-md transition-colors duration-300 flex items-center">
+            <button onClick={navigateToSection} className="mt-6 bg-gradient-to-tr from-blue-500 to-violet-400 hover:bg-blue-700 text-white font-medium py-2 px-5 rounded-3xl shadow-md transition-colors duration-300 flex items-center">
               Learn More
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />

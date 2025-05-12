@@ -15,6 +15,8 @@ const Scenario = () => {
             With <span className="font-semibold text-blue-500">ACE CMS</span>, everything you need is ready at a click, 
             and your auditors are impressed. Your team stays calm, focused, and confident that everything is in order.
           </p>
+
+          <button className='mt-6 p-2 rounded-lg bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-600 text-lg font-semibold border border-violet-300 shadow-lg hover:scale-105'>Book A Demo</button>
         </div>
 
         <div className="mb-5 md:w-1/2 order-1 md:mb-0 md:order-2">

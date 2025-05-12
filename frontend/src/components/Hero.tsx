@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-100 to-purple-200 z-0"></div>
  
       <div className="absolute top-20 right-40 w-64 h-64 rounded-full bg-cyan-400 opacity-80 blur-lg z-0 animate-pulse "></div>
-      <div className="absolute top-40 left-10 w-16 h-16  border border-purple-600 transform rotate-45 opacity-70 z-0"></div>
+      <div className="absolute top-40 left-10 w-16 h-16  border border-purple-600 transform rotate-45 opacity-70 z-0 rectangle"></div>
       <div className="absolute bottom-20 left-40 w-32 h-8 rounded-full bg-green-400 opacity-60 z-0"></div>
       <div className="absolute bottom-20 right-20 w-24 h-24 rounded-full bg-blue-400 opacity-80 z-0"></div>
       <div className="absolute top-32 right-32 w-4 h-4 rounded-full border border-green-500 z-0"></div>

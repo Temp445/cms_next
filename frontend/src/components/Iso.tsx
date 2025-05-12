@@ -75,7 +75,7 @@ const Iso: React.FC = () => {
         {standards.map((standard, index) => (
           <div 
             key={index} 
-            className={`border border-gray-200 rounded-lg p-4 bg-gray-50 hover:bg-gray-100 transition-colors duration-300 cursor-pointer relative shadow-sm ${activeStandard === index ? 'ring-1 ring-blue-200' : ''}`}
+            className={`border border-gray-200 rounded-lg p-4 bg-white hover:bg-gray-100 transition-colors duration-300 cursor-pointer relative shadow-lg ${activeStandard === index ? 'ring-1 ring-blue-200' : ''}`}
             onClick={() => handleCardClick(index)}
           >
           <div className=''> 

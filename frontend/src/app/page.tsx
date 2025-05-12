@@ -3,6 +3,7 @@ import Features from '@/components/Features'
 import Hero from '@/components/Hero'
 import Iso from '@/components/Iso'
 import Scenario from '@/components/Scenario'
+import Testimonial from '@/components/testimonial'
 import Video from '@/components/Video'
 import Why_Choose from '@/components/Why_Choose'
 import React from 'react'
@@ -17,6 +18,7 @@ const Home = () => {
     <Iso/>
     <Video/>    
     <Features/>  
+    <Testimonial/>
     </div>
   )
 }

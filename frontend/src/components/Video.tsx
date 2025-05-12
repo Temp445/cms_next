@@ -42,8 +42,8 @@ export default function Video() {
          Let’s See ACE CMS in Action
         </h1>
 
-      <div className="w-full  flex  justify-center container mx-auto p-4">
-      <div className="relative w-full max-w-5xl">
+      <div className="w-full  flex  justify-center container mx-auto p-4 ">
+      <div className="relative w-full max-w-5xl bg-gradient-to-tl from-violet-500 via-blue-400 to-orange-400 p-1 rounded-xl gradient-background">
         <Image
           src={CMS}
           alt="CMS"

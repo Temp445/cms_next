@@ -12,12 +12,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -25,9 +25,21 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+.rectangle{
+  animation: rectangle-spin infinite 20s linear;
+}
+
+@keyframes rectangle-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .gradient-background {
-  background: linear-gradient(270deg, #6eb2ff7e, #7773f59c, #4ade805e);
+  background: linear-gradient(270deg, #2478d8f6, #3b34f09c, #05c5f5ec);
   background-size: 600% 600%;
   animation: gradientAnimation 10s ease infinite;
 }

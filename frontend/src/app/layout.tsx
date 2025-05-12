@@ -29,11 +29,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+      <link rel="icon" href="/AceLogo.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${urbanist.variable} antialiased`}
       >
         {children}
       </body>
     </html>
+    
   );
 }
