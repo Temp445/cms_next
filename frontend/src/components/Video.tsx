@@ -80,7 +80,6 @@ export default function Video() {
                 ref={videoRef}
                 className="w-full h-auto rounded-lg"
                 controls
-                playsInline
               >
                 <source src="/videos/cms.mp4" type="video/mp4" />
                 Your browser does not support the video tag.

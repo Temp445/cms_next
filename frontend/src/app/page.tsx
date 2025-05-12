@@ -1,4 +1,5 @@
 import Clients from '@/components/Clients'
+import Features from '@/components/Features'
 import Hero from '@/components/Hero'
 import Iso from '@/components/Iso'
 import Scenario from '@/components/Scenario'
@@ -14,7 +15,8 @@ const Home = () => {
     <Clients/>
     <Scenario/>
     <Iso/>
-    <Video/>      
+    <Video/>    
+    <Features/>  
     </div>
   )
 }

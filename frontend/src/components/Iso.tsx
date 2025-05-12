@@ -1,7 +1,10 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Shield, CheckCircle, X } from 'lucide-react';
+
+import { IoShieldHalfOutline } from "react-icons/io5";
+import { MdVerifiedUser } from "react-icons/md";
+import { IoCloseOutline } from "react-icons/io5";
 
 interface IsoStandard {
   id: string;
@@ -13,36 +16,36 @@ const Iso: React.FC = () => {
 
   const standards: IsoStandard[] = [
     { 
-      id: "9001",
-      description: "Specifies requirements for a quality management system. Organizations use this standard to demonstrate the ability to consistently provide products and services that meet customer and regulatory requirements."
+      id: "ISO 9001:2015",
+      description: "ISO 9001:2015 is a global standard for quality management systems that helps organizations improve processes, meet customer needs, and ensure consistent product and service quality."
     },
     { 
-      id: "14001",
-      description: "Provides a framework for organizations to protect the environment and respond to changing environmental conditions while maintaining a balance with socio-economic needs."
+      id: "21 CFR Parts 11 and 820",
+      description: "21 CFR Parts 11 and 820 are FDA regulations that ensure quality and compliance in the medical device industry. Part 11 sets requirements for trustworthy electronic records and signatures, while Part 820 outlines quality system requirements to ensure medical devices are safe and effective."
     },
     { 
-      id: "27001",
-      description: "Specifies the requirements for establishing, implementing, maintaining, and continually improving an information security management system within the context of the organization."
+      id: "AS 9100",
+      description: "AS9100 is an international quality management standard specifically for the aerospace, aviation, and defense industries. It builds on ISO 9001 and adds requirements for safety, reliability, and regulatory compliance in high-risk sectors."
     },
     { 
-      id: "45001",
-      description: "Helps organizations provide safe and healthy workplaces by preventing work-related injury and ill health, and by proactively improving their OH&S performance."
+      id: "API Spec Q1 and Q2",
+      description: "API Spec Q1 and Q2 are quality management standards by the American Petroleum Institute for the oil and gas industry. Q1 applies to equipment manufacturers, while Q2 focuses on service providers—both emphasize risk management, quality, and operational reliability."
     },
     { 
-      id: "22301",
-      description: "Specifies requirements to plan, establish, implement, operate, monitor, review, maintain and continually improve a documented management system to protect against disruptive incidents."
+      id: "ISO 13485",
+      description: "ISO 13485 is an international standard for quality management systems specific to the medical device industry. It ensures that organizations consistently meet regulatory requirements and produce safe, effective medical devices."
     },
     { 
-      id: "20000",
-      description: "Enables organizations to ensure their IT service management processes are aligned with the needs of the business and international best practices."
+      id: "IATF 16949",
+      description: "IATF 16949 is a global quality management standard for the automotive industry. It focuses on defect prevention, continuous improvement, and reducing variation and waste in the supply chain."
     },
     { 
-      id: "13485",
-      description: "Specifies requirements for a quality management system where an organization needs to demonstrate its ability to provide medical devices and related services."
+      id: "ISO 29001:2020",
+      description: "ISO 29001:2020 is a quality management standard for the oil, gas, and petrochemical industries. It builds on ISO 9001 and adds sector-specific requirements to ensure consistent product and service quality, risk management, and regulatory compliance."
     },
     { 
-      id: "31000",
-      description: "Provides principles, framework and a process for managing risk. It can be used by any organization regardless of its size, activity or sector."
+      id: "ISO 17025",
+      description: "ISO/IEC 17025 is an international standard that specifies the general requirements for the competence of testing and calibration laboratories. It ensures the accuracy, reliability, and consistency of lab results."
     }
   ];
 
@@ -58,7 +61,7 @@ const Iso: React.FC = () => {
   return (
     <div className="bg-white text-gray-900 p-6  relative container mx-auto mt-12">
       <div className="flex items-center justify-center mb-8">
-        <Shield className="text-blue-600 mr-3" size={36} />
+        <IoShieldHalfOutline className="text-blue-600 mr-3" size={36} />
         <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
           ACE CMS Compliance Suite
         </h1>
@@ -72,26 +75,29 @@ const Iso: React.FC = () => {
         {standards.map((standard, index) => (
           <div 
             key={index} 
-            className={`border border-gray-200 rounded-lg p-4 bg-gray-50 hover:bg-gray-100 transition-colors duration-300 cursor-pointer relative shadow-sm ${activeStandard === index ? 'ring-2 ring-teal-500' : ''}`}
+            className={`border border-gray-200 rounded-lg p-4 bg-gray-50 hover:bg-gray-100 transition-colors duration-300 cursor-pointer relative shadow-sm ${activeStandard === index ? 'ring-1 ring-blue-200' : ''}`}
             onClick={() => handleCardClick(index)}
           >
-            <div className="flex items-center justify-center mb-2">
-              <CheckCircle className="text-green-500" size={20} />
+          <div className=''> 
+             <div className="flex items-center justify-center mb-2">
+              <MdVerifiedUser className="text-green-400" size={20} />
             </div>
             <div className="text-center">
-              <div className="font-bold text-xl text-blue-600">ISO {standard.id}</div>
+              <div className="font-bold text-xl text-blue-600">{standard.id}</div>
+            </div>
+            
             </div>
 
-            {/* The popup */}
+            
             {activeStandard === index && (
-              <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-white border border-gray-200 rounded-lg shadow-xl z-10">
+              <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-white border border-blue-200 rounded-lg shadow-xl z-10">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="font-bold text-blue-600">ISO {standard.id}</h3>
+                  <h3 className="font-bold text-blue-600">{standard.id}</h3>
                   <button 
                     className="text-gray-500 hover:text-gray-700" 
                     onClick={closePopup}
                   >
-                    <X size={18} />
+                    <IoCloseOutline size={18} />
                   </button>
                 </div>
                 <p className="text-gray-600 text-sm">{standard.description}</p>
