@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
-// Testimonial data
+
 const testimonials = [
   {
     id: 1,
@@ -30,7 +30,6 @@ const testimonials = [
 
 
 
-// Testimonial Carousel Component
 export default function TestimonialCarousel() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
@@ -46,12 +45,12 @@ export default function TestimonialCarousel() {
     );
   };
 
-  const { name, position, quote, rating } = testimonials[currentTestimonial];
+  const { name, position, quote } = testimonials[currentTestimonial];
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <div className='bg-gradient-to-bl from-violet-200 to-blue-200 py-10'>
+        <div className="max-w-4xl mx-auto p-6  bg-gray-100 rounded-lg shadow-lg">
       <div className="relative">
-        {/* Navigation Buttons */}
         <button 
           onClick={prevTestimonial} 
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2"
@@ -65,14 +64,11 @@ export default function TestimonialCarousel() {
           <ChevronRight className="w-6 h-6 text-gray-600" />
         </button>
 
-        {/* Testimonial Content */}
+
         <div className="text-center py-8 px-4">
           <Quote className="mx-auto mb-4 w-12 h-12 text-gray-300" />
           <p className="text-lg italic text-gray-700 mb-4">"{quote}"</p>
           
-         
-
-          {/* Author Information */}
           <div>
             <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
             <p className="text-gray-500">{position}</p>
@@ -80,7 +76,6 @@ export default function TestimonialCarousel() {
         </div>
       </div>
 
-      {/* Pagination Dots */}
       <div className="flex justify-center mt-4">
         {testimonials.map((_, index) => (
           <button
@@ -94,6 +89,7 @@ export default function TestimonialCarousel() {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 }

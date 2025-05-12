@@ -38,20 +38,20 @@ export default function Video() {
         <div className="h-4 w-1 mr-1 mt-0.5 bg-red-500 rotate-12 text-center justify-center"></div>
         <div className="text-center font-semibold">ACE CMS</div>
       </div> */}
-      <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 ">
+      {/* <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 ">
          Let’s See ACE CMS in Action
-        </h1>
+        </h1> */}
 
       <div className="w-full  flex  justify-center container mx-auto p-4 ">
       <div className="relative w-full max-w-5xl bg-gradient-to-tl from-violet-500 via-blue-400 to-orange-400 p-1 rounded-xl gradient-background">
         <Image
           src={CMS}
           alt="CMS"
-          className="w-full md:h-[400px] rounded-xl shadow-lg object-cover"
+          className="w-full md:h-[450px] rounded-xl shadow-lg object-cover"
         />
         <button
   onClick={handleDemoClick}
-  className="absolute inset-0 m-auto flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-full  transition-transform hover:scale-105 shadow-lg w-max h-max"
+  className="absolute inset-0 m-auto flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-full  transition-transform hover:scale-105 shadow-lg w-max h-max animate-pulse"
   aria-label="Watch demo video"
 >
   <SiGoogledisplayandvideo360 className="text-2xl" />
