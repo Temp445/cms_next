@@ -1,7 +1,7 @@
 'use client';
 import { FC, useState } from 'react';
 import Link from 'next/link';
-import { Star, DollarSign, Phone, FileText, Menu, X, MoreHorizontal, Calendar } from 'lucide-react';
+import { Star, DollarSign, Phone, FileText, Menu, X, Calendar } from 'lucide-react';
 
 const Navbar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

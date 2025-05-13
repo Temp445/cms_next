@@ -50,8 +50,8 @@ const Why_Choose = () => {
             </h2>
             
             <p className=" md:text-lg text-gray-600">
-              At <strong>ACE CMS</strong>, we don't just help you manage calibration—we help you master it. 
-              Here's why leading companies trust us:
+              At <strong>ACE CMS</strong>, we don&apos;t just help you manage calibration—we help you master it. 
+              Here&apos;s why leading companies trust us:
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">

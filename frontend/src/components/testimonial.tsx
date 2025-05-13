@@ -67,7 +67,7 @@ export default function TestimonialCarousel() {
 
         <div className="text-center py-8 px-4">
           <Quote className="mx-auto mb-4 w-12 h-12 text-gray-300" />
-          <p className="text-lg italic text-gray-700 mb-4">"{quote}"</p>
+          <p className="text-lg italic text-gray-700 mb-4">&quot;{quote}&quot;</p>
           
           <div>
             <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
