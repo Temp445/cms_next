@@ -59,15 +59,15 @@ const Iso: React.FC = () => {
   };
 
   return (
-    <div className="bg-white text-gray-900 p-6  relative container mx-auto mt-12">
+    <div className="bg-white text-gray-900 p-6  relative container mx-auto mt-5 md:mt-12">
       <div className="flex items-center justify-center mb-8">
-        <IoShieldHalfOutline className="text-blue-600 mr-3" size={36} />
-        <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+        <IoShieldHalfOutline className="text-blue-600 mr-1 md:mr-3 text-3xl md:text-4xl"  />
+        <h1 className="text-xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
           ACE CMS Compliance Suite
         </h1>
       </div>
       
-      <p className="text-lg text-center text-gray-700 mb-8 max-w-3xl mx-auto">
+      <p className="md:text-lg text-justify md:text-center text-gray-700 mb-8 max-w-3xl mx-auto">
         Our comprehensive management system ensures your organization meets every major quality standard with minimal effort.
       </p>
       
@@ -83,7 +83,7 @@ const Iso: React.FC = () => {
               <MdVerifiedUser className="text-green-400" size={20} />
             </div>
             <div className="text-center">
-              <div className="font-bold text-xl text-blue-600">{standard.id}</div>
+              <div className="font-bold md:text-xl text-blue-600">{standard.id}</div>
             </div>
             
             </div>

@@ -28,8 +28,8 @@ const Why_Choose = () => {
                   alt="ACE CMS" 
                   className="object-cover w-full h-full rounded-lg" 
                 />
-<div className="absolute w-16 h-16 rounded-full bg-gray-700 z-20 -right-5 -bottom-5 flex items-center justify-center">
-  <div className='absolute bg-white w-12 h-12 rounded-full z-30 flex items-center justify-center'><Image src={icon} alt="iso" className="w-10 h-10 z-40 -rotate-12 absolute" /></div>
+<div className="absolute w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-700 z-20 -right-5 -bottom-5 flex items-center justify-center">
+  <div className='absolute bg-white w-10 h-10 md:w-12 md:h-12 rounded-full z-30 flex items-center justify-center'><Image src={icon} alt="iso" className="w-8 h-8 md:w-10 md:h-10 z-40 -rotate-12 absolute" /></div>
 </div>
               </div>
             </div>
@@ -38,18 +38,18 @@ const Why_Choose = () => {
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-indigo-100 rounded-full opacity-70 z-0"></div>
           </div>
           
-          {/* Content section */}
-          <div className="w-full md:w-7/12 space-y-6">
+        
+          <div className="w-full md:w-7/12 space-y-6 ">
             <div className="inline-block bg-blue-50 text-blue-800 px-4 py-1 rounded-full font-medium">
               Why Choose Us?
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-               ACE CMS – Smart <span className='bg-clip-text text-transparent bg-gradient-to-bl from-indigo-600 to-red-300'>Calibration Management</span>Made Simple
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-800 leading-tight">
+               ACE CMS – Smart <span className='bg-clip-text text-transparent bg-gradient-to-bl from-indigo-600 to-red-300 mr-2'>Calibration Management</span> <br className='hidden md:block' />Made Simple
               <span className="text-blue-600"></span>
             </h2>
             
-            <p className="text-lg text-gray-600">
+            <p className=" md:text-lg text-gray-600">
               At <strong>ACE CMS</strong>, we don't just help you manage calibration—we help you master it. 
               Here's why leading companies trust us:
             </p>
@@ -72,7 +72,7 @@ const Why_Choose = () => {
               ))}
             </div>
             
-            <button onClick={navigateToSection} className="mt-6 bg-gradient-to-tr from-blue-500 to-violet-400 hover:bg-blue-700 text-white font-medium py-2 px-5 rounded-3xl shadow-md transition-colors duration-300 flex items-center">
+            <button onClick={navigateToSection} className="text-sm  mt-6 bg-gradient-to-tr from-blue-500 to-violet-400 hover:bg-blue-700 text-white font-medium py-2 px-4 md:py-2 md:px-5 rounded-3xl shadow-md transition-colors duration-300 flex items-center">
               Learn More
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />

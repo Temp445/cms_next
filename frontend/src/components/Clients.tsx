@@ -48,11 +48,11 @@ const Clients: React.FC = () => {
 
   return (
     <div className="px-5  mt-5 md:mt-10 z-0 container mx-auto ">
-        <h1 className="text-center text-3xl md:text-4xl font-bold mb-8 text-gray-700 ">
+        <h1 className="text-center text-2xl md:text-4xl font-bold md:mb-8 text-gray-700 ">
         Brands That Trust Us
       </h1>
 
-      <div className="py-2 md:py-4">
+      <div className="py-2 md:py-4 bg-gradient-to-bl">
         <Marquee
           gradient={false}
           speed={50}

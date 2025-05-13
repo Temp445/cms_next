@@ -32,13 +32,13 @@ export default function Video() {
   };
 
   return (
-    <div className='container mt-10 md:mt-12 mx-auto'>
+    <div className='container mt-5 md:mt-12 mx-auto'>
  {/* <div className="flex justify-center mb-2 ">
         <div className="h-3 w-1 mr-1 mt-0.5 bg-blue-500 rotate-12 text-center justify-center"></div>
         <div className="h-4 w-1 mr-1 mt-0.5 bg-red-500 rotate-12 text-center justify-center"></div>
         <div className="text-center font-semibold">ACE CMS</div>
       </div> */}
-      {/* <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 ">
+      {/* <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-400 ">
          Let’s See ACE CMS in Action
         </h1> */}
 
@@ -51,10 +51,10 @@ export default function Video() {
         />
         <button
   onClick={handleDemoClick}
-  className="absolute inset-0 m-auto flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-full  transition-transform hover:scale-105 shadow-lg w-max h-max animate-pulse"
+  className="absolute inset-0 m-auto flex items-center justify-center gap-1 md:gap-2 px-3 py-2 md:px-6 md:py-3 bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-full  transition-transform hover:scale-105 shadow-lg w-max h-max animate-pulse"
   aria-label="Watch demo video"
 >
-  <SiGoogledisplayandvideo360 className="text-2xl" />
+  <SiGoogledisplayandvideo360 className="text-base md:text-2xl" />
   <span className="text-base font-semibold">Watch Demo</span>
 </button>
 
