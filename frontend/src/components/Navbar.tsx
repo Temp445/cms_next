@@ -58,31 +58,48 @@ const Navbar: FC = () => {
         </div>
 
 
-        {isMenuOpen && (
-          <div className="fixed bottom-14 md:top-full left-0.5  right-10 bg-white shadow-lg rounded py-4 px-6 z-50 md:hidden">
-            <div className="flex flex-col space-y-4">
-              <Link href="#features" className="flex items-center text-gray-800 hover:text-purple-600 text-base font-semibold">
-                <Star className="w-4 h-4 mr-2" />
-                Feature
-              </Link>
+    {isMenuOpen && (
+  <div className="fixed bottom-14 md:top-full left-0.5 right-10 bg-white shadow-lg rounded py-4 px-6 z-50 md:hidden">
+    <div className="flex flex-col space-y-4">
+      <Link
+        href="#features"
+        onClick={() => setIsMenuOpen(false)}
+        className="flex items-center text-gray-800 hover:text-purple-600 text-base font-semibold"
+      >
+        <Star className="w-4 h-4 mr-2" />
+        Feature
+      </Link>
 
-              <Link href="#pricing" className="flex items-center text-gray-800 hover:text-purple-600 text-base font-semibold">
-                <DollarSign className="w-4 h-4 mr-2" />
-                Pricing
-              </Link>
+      <Link
+        href="#pricing"
+        onClick={() => setIsMenuOpen(false)}
+        className="flex items-center text-gray-800 hover:text-purple-600 text-base font-semibold"
+      >
+        <DollarSign className="w-4 h-4 mr-2" />
+        Pricing
+      </Link>
 
-              <Link href="#contact" className="flex items-center text-gray-800 hover:text-purple-600 text-base font-semibold">
-                <FileText className="w-4 h-4 mr-2" />
-                Book A Demo
-              </Link>
+      <Link
+        href="#contact"
+        onClick={() => setIsMenuOpen(false)}
+        className="flex items-center text-gray-800 hover:text-purple-600 text-base font-semibold"
+      >
+        <FileText className="w-4 h-4 mr-2" />
+        Book A Demo
+      </Link>
 
-              <Link href="#client" className="flex items-center text-gray-800 hover:text-purple-600 text-base font-semibold">
-                <Users className="w-4 h-4 mr-2" />
-                Clients
-              </Link>
-            </div>
-          </div>
-        )}
+      <Link
+        href="#client"
+        onClick={() => setIsMenuOpen(false)}
+        className="flex items-center text-gray-800 hover:text-purple-600 text-base font-semibold"
+      >
+        <Users className="w-4 h-4 mr-2" />
+        Clients
+      </Link>
+    </div>
+  </div>
+)}
+
 
         <div className="hidden md:flex items-center space-x-4">
           <Link href="/signin" className="bg-gradient-to-r from-green-400 to-green-300 text-white px-4 py-1 lg:px-6 lg:py-2 rounded-md font-medium hover:opacity-90 transition">
