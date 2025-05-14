@@ -4,7 +4,7 @@ import React from 'react'
 import { CheckCircle } from 'lucide-react'
 import Image from 'next/image'
 import CMS from '../assets/CMS3.png'
-import icon from '../assets/icon.png'
+import logo from '../assets/logo.svg'
 import { useRouter } from 'next/navigation'
 
 
@@ -19,8 +19,8 @@ const Why_Choose = () => {
   return (
     <section className="py-16 container mx-auto">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-16">
-          <div className="w-full md:w-5/12 relative">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+          <div className="w-full md:w-8/12 lg:w-5/12 relative">
             <div className="relative z-10 bg-white p-1 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="mx-auto  relative">
                 <Image 
@@ -28,9 +28,9 @@ const Why_Choose = () => {
                   alt="ACE CMS" 
                   className="object-cover w-full h-full rounded-lg" 
                 />
-<div className="absolute w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-700 z-20 -right-5 -bottom-5 flex items-center justify-center">
-  <div className='absolute bg-white w-10 h-10 md:w-12 md:h-12 rounded-full z-30 flex items-center justify-center'><Image src={icon} alt="iso" className="w-8 h-8 md:w-10 md:h-10 z-40 -rotate-12 absolute" /></div>
-</div>
+{/* <div className="absolute w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-700 z-20 -right-5 -bottom-5 flex items-center justify-center">
+  <div className='absolute bg-white w-10 h-10 md:w-12 md:h-12 rounded-full z-30 flex items-center justify-center'><Image src={logo} alt="iso" className="w-8 h-8 md:w-10 md:h-10 z-40  absolute" /></div>
+</div> */}
               </div>
             </div>
           
@@ -39,17 +39,17 @@ const Why_Choose = () => {
           </div>
           
         
-          <div className="w-full md:w-7/12 space-y-6 ">
+          <div className="w-full lg:w-7/12 space-y-6 ">
             <div className="inline-block bg-blue-50 text-blue-800 px-4 py-1 rounded-full font-medium">
               Why Choose Us?
             </div>
             
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-800 leading-tight">
-               ACE CMS – Smart <span className='bg-clip-text text-transparent bg-gradient-to-bl from-indigo-600 to-red-300 mr-2'>Calibration Management</span> <br className='hidden md:block' />Made Simple
+            <h2 className="text-2xl md:3xl lg:text-4xl font-bold text-gray-800 leading-tight">
+               ACE CMS – Smart <span className='bg-clip-text text-transparent bg-gradient-to-bl from-indigo-600 to-red-300 mr-2'>Calibration Management</span> <br className='hidden lg:block' />Made Simple
               <span className="text-blue-600"></span>
             </h2>
             
-            <p className=" md:text-lg text-gray-600">
+            <p className=" lg:text-lg text-gray-600">
               At <strong>ACE CMS</strong>, we don&apos;t just help you manage calibration—we help you master it. 
               Here&apos;s why leading companies trust us:
             </p>

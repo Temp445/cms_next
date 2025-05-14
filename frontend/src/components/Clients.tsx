@@ -47,7 +47,7 @@ const Clients: React.FC = () => {
   const secondHalf = logos.slice(half);
 
   return (
-    <div className="px-5  mt-5 md:mt-10 z-0 container mx-auto ">
+    <div className="px-5  mt-10  z-0 container mx-auto" id="client">
         <h1 className="text-center text-2xl md:text-4xl font-bold md:mb-8 text-gray-700 ">
         Brands That Trust Us
       </h1>
@@ -75,7 +75,7 @@ const Clients: React.FC = () => {
           speed={50}
           pauseOnHover={true}
           direction="right"
-          className="mt-4"
+          className="mt-0 md:mt-4"
         >
           {secondHalf.concat(secondHalf).map((logo, index) => (
             <div key={`second-${index}`} className="flex items-center z-0">
