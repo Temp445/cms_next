@@ -4,7 +4,6 @@ import Features from '@/components/Features'
 import Footer from '@/components/Footer'
 import Form from '@/components/Form'
 import Hero from '@/components/Hero'
-import Iso from '@/components/Iso'
 import Navbar from '@/components/Navbar'
 import PricingTable from '@/components/PricingTable'
 import Scenario from '@/components/Scenario'
@@ -21,7 +20,6 @@ const Home = () => {
       <Why_Choose/>
     <Scenario/>
     <Clients/>
-    {/* <Iso/> */}
     <Video/>    
     <Features/>
     <PricingTable/>

@@ -1,7 +1,7 @@
 'use client';
 import { FC, useState } from 'react';
 import Link from 'next/link';
-import { Star, DollarSign, FileText, Menu, X, Calendar, FilePen,Users } from 'lucide-react';
+import { Star, DollarSign, FileText, Menu, X, Calendar, Users } from 'lucide-react';
 import Image from 'next/image';
 import logo from '../assets/AceLogo.png'
 const Navbar: FC = () => {

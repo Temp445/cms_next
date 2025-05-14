@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 
 // import { MdOutlineGeneratingTokens } from "react-icons/md";
-import { IoAddOutline } from "react-icons/io5";
+// import { IoAddOutline } from "react-icons/io5";
 import { SiMoneygram } from "react-icons/si";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 // Define types for features
@@ -52,11 +52,11 @@ const PricingTable: React.FC = () => {
   ];
 
   //features-2
-  const autoTriggerFeatures: Feature[] = [
-    { name: 'Opportunity Tracking', standard: true, premium: true },
-    { name: 'Quotation Generation', standard: true, premium: true },
-    { name: 'Order Management', standard: true, premium: true },
-  ];
+  // const autoTriggerFeatures: Feature[] = [
+  //   { name: 'Opportunity Tracking', standard: true, premium: true },
+  //   { name: 'Quotation Generation', standard: true, premium: true },
+  //   { name: 'Order Management', standard: true, premium: true },
+  // ];
 
   //features-3
   const features2: Feature[] = [
@@ -162,6 +162,7 @@ const PricingTable: React.FC = () => {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-8 smm:px-6 md:px-4 py-16 mb-0 " id="pricing">
+
       
       <div className="text-center mb-10 md:mb-12">
         <div className='flex gap-2 text-center mx-auto w-full justify-center'>

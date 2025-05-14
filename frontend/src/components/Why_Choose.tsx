@@ -4,7 +4,6 @@ import React from 'react'
 import { CheckCircle } from 'lucide-react'
 import Image from 'next/image'
 import CMS from '../assets/CMS3.png'
-import logo from '../assets/logo.svg'
 import { useRouter } from 'next/navigation'
 
 
