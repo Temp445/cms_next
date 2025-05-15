@@ -38,7 +38,7 @@ const Why_Choose = () => {
           </div>
           
         
-          <div className="w-full xl:w-7/12 space-y-6  border border-gray-200 shadow-lg sm:shadow-none sm:border-0 pt-5 pb-10 px-2 lg:px-12 xl:px-2 rounded">
+          <div className="w-full xl:w-7/12 space-y-6  border border-gray-200  sm:border-0 pt-5 pb-10 px-2 lg:px-12 xl:px-2 rounded">
             <div className="inline-block bg-blue-50 text-blue-800 px-4 py-1 rounded-full font-medium">
               Why Choose Us?
             </div>

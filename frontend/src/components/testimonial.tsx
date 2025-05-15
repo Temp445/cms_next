@@ -50,7 +50,7 @@ export default function TestimonialCarousel() {
 
   return (
     <div className='bg-gradient-to-bl from-violet-200 to-blue-200 py-10 px-2 md:px-10'>
-      <h1 className='text-center text-2xl md:text-3xl font-bold pb-5 bg-clip-text text-transparent bg-gradient-to-br from-red-500 to-blue-800'>Authentic Customer Feedback</h1>
+      <h1 className='text-center text-2xl md:text-3xl font-bold pb-5 text-gray-700'>Authentic Customer Feedback</h1>
       <div className="max-w-4xl mx-auto p-4 md:p-6 bg-gray-100 rounded-lg shadow-lg">
         <div className="relative">
           <button 
