@@ -56,7 +56,7 @@ const Form: React.FC = () => {
 
   return (
     <div id="contact">
-      <div className="mt-0 md:px-2">
+      <div className="mt-5 md:px-2">
         {/* <h2 className="sm:hidden w-full mx-auto text-center mt-10  font-semibold text-[24px]">Contact Us</h2> */}
         <div className="flex flex-col md:flex-row p-4 py-10  rounded-lg  md:py-10 max-w-6xl mx-auto sm:mt-20 mb-20 justify-center">
           <div className="md:w-7/12 rounded md:rounded-none md:rounded-l-sm md:border-indigo-300 border p-5 md:p-10">
@@ -116,7 +116,7 @@ const Form: React.FC = () => {
                     type="number"
                     name="number"
                     placeholder="Phone Number *"
-                    className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full focus:outline-none focus:ring-2 focus:ring-red-100 appearance-none"
+                    className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full focus:outline-none focus:ring-2 focus:ring-red-100 appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                     required
                     style={{
                       WebkitAppearance: "none",
@@ -150,7 +150,7 @@ const Form: React.FC = () => {
                 className="bg-blue-400 text-white px-4 py-2 rounded hover:bg-green-500 flex gap-3 md:text-lg"
               >
                 {loading ? "Sending" : "Send"}
-                <SendHorizontal className="mt-1 w-4 h-4 md:w-5 md:h-5 " />
+                <SendHorizontal className="mt-1 w-4 h-4 md:mt-1.5 " />
               </button>
             </form>
           </div>
@@ -172,35 +172,35 @@ const Form: React.FC = () => {
               </div>
             </div>
             
-            <div className="p-8 space-y-8">
+            <div className=" p-4 lg:p-8 space-y-8 md:mt-3">
               <div className="flex items-start space-x-4">
                 <div className="bg-red-400  rounded-full p-3">
-                  <Mails className="text-xl text-white" />
+                  <Mails className=" w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
                 <div className="">
                   <h4 className="font-semibold text-lg text-black ">Email Us</h4>
-                  <p className=" mt-1 text-black ">sales@acesoft.in</p>
+                  <p className=" mt-1 text-black text-sm md:test-base  ">sales@acesoft.in</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-4">
                 <div className="bg-blue-500  rounded-full p-3">
-                  <PhoneCall className="w-5 h-5 text-white" />
+                  <PhoneCall className="w-4 h-4 md:w-5 md:h-5 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-black ">Call Us</h4>
-                  <p className=" mt-1 text-black ">+91 9840137210</p>
-                  <p className="opacity-90 text-black ">Mon-sat from 10am to 6:30pm</p>
+                  <p className=" mt-1 text-black text-sm md:test-base ">+91 9840137210</p>
+                  <p className="opacity-90 text-black text-sm md:test-base ">Mon-sat from 10am to 6:30pm</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-4">
                 <div className="bg-violet-400  rounded-full p-3">
-                  <MapPinned  className="text-xl text-white" />
+                  <MapPinned  className=" w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-black ">Visit Us</h4>
-                  <p className="opacity-90 mt-1 text-black ">#306, 2nd Floor NSIC - Software Technology Business Park B 24, Guindy Industrial Estate Ekkaduthangal, Chennai - 600032</p>
+                  <p className="mt-1 text-black text-sm md:text-base ">#306, 2nd Floor NSIC - Software Technology Business Park B 24, Guindy Industrial Estate Ekkaduthangal, Chennai - 600032</p>
 
                 </div>
               </div>

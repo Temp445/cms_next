@@ -48,7 +48,7 @@ const Clients: React.FC = () => {
 
   return (
     <div className="px-5  mt-10  z-0 container mx-auto" id="client">
-        <h1 className="text-center text-2xl md:text-4xl font-bold md:mb-8 text-gray-700 ">
+        <h1 className="text-center text-2xl md:text-4xl font-bold md:mb-8 bg-clip-text text-transparent bg-gradient-to-bl from-violet-700  to-orange-700 ">
         Brands That Trust Us
       </h1>
 

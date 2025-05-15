@@ -25,7 +25,7 @@ const Hero = () => {
  
       <div className="absolute top-20 right-40 w-64 h-64 rounded-full bg-cyan-400 opacity-80 blur-lg z-0 animate-pulse "></div>
       <div className="flex absolute top-16 left-5 md:top-40 md:left-10 w-10 h-10 md:w-16 md:h-16  border border-purple-600 transform rotate-45 opacity-70 z-0 rectangle"></div>
-      <div className="flex absolute bottom-20 left-80 lg:left-40 w-32 h-8 rounded-full bg-green-400 opacity-60 z-0"></div>
+      <div className="flex absolute bottom-20 left-80 md:left-20 md:bottom-32 lg:bottom-20 lg:left-40 w-32 h-8 rounded-full bg-green-400 opacity-60 z-0"></div>
       <div className="flex absolute right-3 bottom-5 md:right-10 md:bottom-10 lg:bottom-20 lg:right-20 w-16 h-1 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-blue-400 opacity-80 z-0"></div>
       <div className="flex absolute top-60  right-20 md:top-32 md:right-28 w-4 h-4 rounded-full border border-green-500 z-0"></div>
       <div className="hidden md:flex absolute bottom-60 left-20 w-32 h-12 rounded-full bg-cyan-300 opacity-70 z-0"></div>
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
 
         <div className=" py-0 pb-5 md:py-20 lg:py-24 text-center">
-          <h1 className="text-2xl md:text-4xl  lg:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6">
             Streamline Your Calibration Processes with <span className='bg-clip-text text-transparent bg-gradient-to-bl from-blue-600 via-red-300 to-purple-400'>ACE CMS</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -50,7 +50,7 @@ const Hero = () => {
           </p>
           
           <div className="mt-10 ">
-            <button onClick={navigateToForm} className="border border-sky-600 hover:border-0 text-sky-600 hover:bg-sky-500 hover:text-white p-2 md:px-10 md:py-3  rounded-md font-semibold  transition">
+            <button onClick={navigateToForm} className="border border-sky-600  text-sky-600 hover:bg-sky-600 hover:text-white p-2 md:px-10 md:py-3  rounded-md font-semibold  transition">
               Contact Us
             </button>
           </div>

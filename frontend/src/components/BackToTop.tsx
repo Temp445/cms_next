@@ -29,14 +29,16 @@ const BackToTop = () => {
   }, []);
 
   return (
-    <button
-      className={`hidden lg:block fixed bottom-5 right-5 bg-gradient-to-br from-cyan-500   to-violet-400 text-white p-3 rounded-full shadow-lg z-50 ${
+ <div className="container mx-auto w-full">
+     <button
+      className={`hidden lg:block  fixed bottom-5 right-5 bg-gradient-to-br from-blue-700   to-violet-400 text-white p-3 rounded-full shadow-lg z-50 ${
         visible ? "block" : "hidden"
       }`}
       onClick={scrollToTop}
     >
       <FaArrowUp />
     </button>
+ </div>
   );
 };
 

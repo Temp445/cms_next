@@ -17,9 +17,9 @@ const Why_Choose = () => {
 
   return (
     <section className="py-16 container mx-auto">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-          <div className="w-full md:w-8/12 lg:w-5/12 relative">
+      <div className="container mx-auto px-2 md:px-4">
+        <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-16">
+          <div className="w-full md:w-8/12  xl:w-5/12 relative">
             <div className="relative z-10 bg-white p-1 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="mx-auto  relative">
                 <Image 
@@ -38,12 +38,12 @@ const Why_Choose = () => {
           </div>
           
         
-          <div className="w-full lg:w-7/12 space-y-6 ">
+          <div className="w-full xl:w-7/12 space-y-6  border border-gray-200 shadow-lg sm:shadow-none sm:border-0 pt-5 pb-10 px-2 lg:px-12 xl:px-2 rounded">
             <div className="inline-block bg-blue-50 text-blue-800 px-4 py-1 rounded-full font-medium">
               Why Choose Us?
             </div>
             
-            <h2 className="text-2xl md:3xl lg:text-4xl font-bold text-gray-800 leading-tight">
+            <h2 className="text-2xl md:3xl 2xl:text-4xl font-bold text-gray-800 leading-tight">
                ACE CMS – Smart <span className='bg-clip-text text-transparent bg-gradient-to-bl from-indigo-600 to-red-300 mr-2'>Calibration Management</span> <br className='hidden lg:block' />Made Simple
               <span className="text-blue-600"></span>
             </h2>

@@ -13,11 +13,11 @@ const Navbar: FC = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-between md:pt-6 lg:pb-10 px-4 md:px-6 relative">
+      <nav className="flex items-center justify-between md:pt-5 lg:pb-10 px-4 md:px-0 lg:px-6 relative">
         <div className="md:flex items-center hidden ">
-          <div className="text-2xl lg:text-3xl font-bold text-gray-800 flex gap-1">
-            <Image src={logo} alt="logo" width={100} height={100} className='w-12 h-12 -mt-2' />
-            <span className=''>ACE </span>CMS
+          <div className="text-2xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 flex gap-1">
+            <Image src={logo} alt="logo" width={100} height={100} className='w-12 h-12 md:w-10 md:h-10 lg:w-12 lg:h-12  ' />
+            <span className='mt-2'>ACE CMS </span>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ const Navbar: FC = () => {
         <div className="hidden md:flex items-center space-x-2">
           <Link href="#features" className="flex items-center text-gray-800 hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-gradient-to-tr from-blue-500  to-violet-500">
             <Star className="w-4 h-4 mr-2" />
-            Feature
+            Features
           </Link>
 
           <Link href="#pricing" className="flex items-center text-gray-800 hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-gradient-to-tr from-blue-500 to-violet-500">
@@ -102,7 +102,7 @@ const Navbar: FC = () => {
 
 
         <div className="hidden md:flex items-center space-x-4">
-          <Link href="/signin" className="bg-gradient-to-r from-green-400 to-green-300 text-white px-4 py-1 lg:px-6 lg:py-2 rounded-md font-medium hover:opacity-90 transition">
+          <Link href="/signin" className="bg-gradient-to-r from-green-400 to-green-300 text-white px-4 py-1 md:px-2 lg:px-6 xl:py-2 rounded-md font-medium hover:opacity-90 transition">
             Sign In
           </Link>
         </div>
