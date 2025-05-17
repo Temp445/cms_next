@@ -3,7 +3,7 @@
 import React from 'react'
 import { CheckCircle } from 'lucide-react'
 import Image from 'next/image'
-import CMS from '../assets/CMS3.png'
+import CMS from '../assets/CMS4.png'
 import { useRouter } from 'next/navigation'
 
 
@@ -16,24 +16,20 @@ const Why_Choose = () => {
   }
 
   return (
-    <section className="py-16 container mx-auto">
+    <section className="py-16 container mx-auto ">
       <div className="container mx-auto px-2 md:px-4">
         <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-16">
           <div className="w-full md:w-8/12  xl:w-5/12 relative">
-            <div className="relative z-10 bg-white p-1 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div className="relative z-10 bg-slate-100 p-1 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="mx-auto  relative">
                 <Image 
                   src={CMS} 
                   alt="ACE CMS" 
                   className="object-cover w-full h-full rounded-lg" 
                 />
-{/* <div className="absolute w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-700 z-20 -right-5 -bottom-5 flex items-center justify-center">
-  <div className='absolute bg-white w-10 h-10 md:w-12 md:h-12 rounded-full z-30 flex items-center justify-center'><Image src={logo} alt="iso" className="w-8 h-8 md:w-10 md:h-10 z-40  absolute" /></div>
-</div> */}
               </div>
             </div>
           
-            {/* <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-100 rounded-full opacity-70 z-0"></div>    */}
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-indigo-100 rounded-full opacity-70 z-0"></div>
           </div>
           

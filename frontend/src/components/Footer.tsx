@@ -43,15 +43,15 @@ const Footer = () => {
           </div>
         </div>
 
-                <div className="md:hidden lg:block">
+          <div className="md:hidden lg:block">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.626039048191!2d80.20146899191994!3d13.0157278024425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52669470c1b127%3A0xe3512b101f4ee3ad!2sACE%20Software%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1742627952587!5m2!1sen!2sin" 
               title="ACE Software Solutions location"
               className="w-full h-full rounded"
               frameBorder="0"
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+              referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
       </div>

@@ -2,7 +2,6 @@
 import React from 'react'
 import Image from 'next/image'
 
-// Import icons
 import icon1 from '../assets/icon1.png'
 import icon2 from '../assets/icon2.png'
 import icon3 from '../assets/icon3.png'
@@ -13,7 +12,7 @@ import icon7 from '../assets/icon7.png'
 import icon8 from '../assets/icon8.png'
 import icon9 from '../assets/icon9.png'
 
-// Features data
+
 const features = [
   {
     icon: icon1,

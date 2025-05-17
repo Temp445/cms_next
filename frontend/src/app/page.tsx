@@ -1,3 +1,4 @@
+import Banner from '@/components/Banner'
 import BackToTop from '@/components/BackToTop'
 import Clients from '@/components/Clients'
 import Features from '@/components/Features'
@@ -20,6 +21,7 @@ const Home = () => {
       <Why_Choose/>
     <Scenario/>
     <Clients/>
+    <Banner/>
     <Video/>    
     <Features/>
     <PricingTable/>

@@ -57,7 +57,6 @@ const Form: React.FC = () => {
   return (
     <div id="contact">
       <div className="mt-5 md:px-2">
-        {/* <h2 className="sm:hidden w-full mx-auto text-center mt-10  font-semibold text-[24px]">Contact Us</h2> */}
         <div className="flex flex-col md:flex-row p-4 py-10  rounded-lg  md:py-10 max-w-6xl mx-auto sm:mt-20 mb-20 justify-center">
           <div className="md:w-7/12 rounded md:rounded-none md:rounded-l-sm md:border-indigo-300 border p-5 md:p-10">
             <h2 className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">

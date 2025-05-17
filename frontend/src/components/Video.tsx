@@ -4,7 +4,7 @@ import React, { useState, useRef } from 'react';
 import { SiGoogledisplayandvideo360 } from "react-icons/si";
 import { IoCloseCircleOutline } from 'react-icons/io5';
 import Image from 'next/image';
-import CMS from '../assets/CMS3.png';
+import CMS from '../assets/CMS4.png';
 
 export default function Video() {
   const [showVideoOverlay, setShowVideoOverlay] = useState(false);

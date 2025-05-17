@@ -38,6 +38,21 @@ body {
   }
 }
 
+.rectangle1{
+  animation: rectangle-spin1 infinite 20s linear;
+}
+
+@keyframes rectangle-spin1 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+
 .gradient-background {
   background: linear-gradient(270deg, #2478d8f6, #3b34f09c, #05c5f5ec);
   background-size: 600% 600%;
