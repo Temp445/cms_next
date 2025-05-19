@@ -43,7 +43,7 @@ const Banner = () => {
         <p className="text-gray-800 text-lg text-justify">
          Check your calibration info on your phone, anytime, anywhere
         </p>
-        <button onClick={navigateToApp} className="mt-4 p-2 md:p-0 md:px-4 md:py-2 border border-black text-black hover:border-b-indigo-700 hover:text-white rounded-lg shadow-lg hover:bg-indigo-700  transition">
+        <button onClick={navigateToApp} className="mt-4 p-2 md:p-0 md:px-4 md:py-2 border border-black text-black hover:border-indigo-700 hover:text-white rounded-lg shadow-lg hover:bg-indigo-700  transition">
           Tap to enter
         </button>
       </div>

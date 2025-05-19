@@ -38,18 +38,7 @@ body {
   }
 }
 
-.rectangle1{
-  animation: rectangle-spin1 infinite 20s linear;
-}
 
-@keyframes rectangle-spin1 {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
 
 
 

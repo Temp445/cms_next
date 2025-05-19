@@ -32,7 +32,7 @@ const Scenario = () => {
         </div>
 
         <div className="mb-5 lg:w-1/2 order-1 md:mb-0 lg:order-2 md:pb-10">
-     <Image src={cms} alt="" className='rounded-lg md:shadow-xl shadow-indigo-300' />
+     <Image src={cms} alt="cms" className='rounded-lg md:shadow-xl shadow-indigo-300' />
         </div>
       </div>
     </div>
