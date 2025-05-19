@@ -1,4 +1,4 @@
-'use client'
+
 
 import Marquee from "react-fast-marquee";
 import Image, { StaticImageData } from "next/image";

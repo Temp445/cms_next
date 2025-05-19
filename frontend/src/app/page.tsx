@@ -16,9 +16,9 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-      <div className='container mx-auto absolute md:hidden'><Navbar/></div>
-      <Hero/>
-      <Why_Choose/>
+    <div className='container mx-auto absolute md:hidden'><Navbar/></div>
+    <Hero/>
+    <Why_Choose/>
     <Scenario/>
     <Clients/>
     <Banner/>

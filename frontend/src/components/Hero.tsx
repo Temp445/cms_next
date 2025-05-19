@@ -1,19 +1,14 @@
-"use client";
 
 import Navbar from "./Navbar";
 import logo from "../assets/AceLogo.png";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Hero = () => {
-  const router = useRouter();
 
-  const navigateToForm = () => {
-    router.push("/#contact");
-  };
 
   return (
-    <div className="bg-gray-100 relative min-h-fit overflow-hidden ">
+    <div className="bg-gray-100 relative min-h-fit overflow-hidden " id="top">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-100 to-purple-200 z-0"></div>
 
       <div className="relative min-h-fit overflow-hidden bg-gray-100 container mx-auto ">
@@ -54,12 +49,11 @@ const Hero = () => {
             </p>
 
             <div className="mt-10 ">
-              <button
-                onClick={navigateToForm}
+              <Link href="#contact"
                 className="border border-sky-600  text-sky-600 hover:bg-sky-600 hover:text-white p-2 md:px-10 md:py-3  rounded-md font-semibold  transition"
               >
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
         </div>

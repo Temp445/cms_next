@@ -1,25 +1,17 @@
-'use client'
 
 import Image from 'next/image';
 import React from 'react';
 import android  from '../assets/app.svg'
 import icon  from '../assets/icon10.png'
-
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const Banner = () => {
-    const router = useRouter();
- 
-       const navigateToApp = ()=>{
-        router.push('/signin')
-       }
-
+    
   
   return (
-    <div className='bg-gradient-to-b  from-[#fd736cb7]  to-[#aceef8cb]'>
+         <div className='bg-gradient-to-b  from-[#fd736cb7]  to-[#aceef8cb]'>
         
         <div className="min-h-fit  flex flex-col lg:flex-row items-center justify-center p-6 py-5 px-10  container mx-auto relative">
-
          <div className='hidden lg:block absolute w-5 h-5 border border-gray-400 z-10 bottom-5 left-5 rotate-12 rounded-full'></div>
          <div className='hidden lg:block absolute w-10 h-10 border border-gray-900 z-10 top-20 left-20 rotate-45'></div>
          <div className='hidden lg:block absolute w-16 h-16 border border-gray-400 z-10 bottom-32 lg:left-72 xl:left-[450px] rotate-12 rounded-full'></div>
@@ -43,9 +35,11 @@ const Banner = () => {
         <p className="text-gray-800 text-lg text-justify">
          Check your calibration info on your phone, anytime, anywhere
         </p>
-        <button onClick={navigateToApp} className="mt-4 p-2 md:p-0 md:px-4 md:py-2 border border-black text-black hover:border-indigo-700 hover:text-white rounded-lg shadow-lg hover:bg-indigo-700  transition">
+    <div className='mt-5 md:mt-10'> 
+        <Link href="/signin" className="mt-4 p-2 md:p-0 md:px-4 md:py-2 border border-black text-black hover:border-indigo-700 hover:text-white rounded-lg shadow-lg hover:bg-indigo-700  transition">
           Tap to enter
-        </button>
+        </Link>
+    </div>
       </div>
 
 
