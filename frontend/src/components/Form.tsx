@@ -154,12 +154,14 @@ const Form: React.FC = () => {
             <div className="h-48 relative overflow-hidden">
              
               <div className="absolute inset-0 bg-blue-50 bg-opacity-20 flex flex-col items-center justify-center mg:rounded-tr-sm">
-                   <Image 
-                src={icon} 
-                alt="Company Logo" 
-                className="w-full h-full object-cover object-center z-10 opacity-50"
-                layout="fill"
-              /> 
+            <Image 
+              fill
+              src={icon} 
+              alt="bg" 
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="w-full h-full object-cover object-center z-10 opacity-50"
+              />
+ 
               <div className="z-40  text-center ">
                   <h1 className="z-20 text-black text-shadow-lg font-bold ">ACE CMS</h1>
                 <h3 className="text-2xl font-bold text-black z-20 text-shadow-lg">Contact Information</h3>
