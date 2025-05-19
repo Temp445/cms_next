@@ -184,15 +184,14 @@ const PricingTable: React.FC = () => {
             <div className="p-5 lg:p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h2>
               <p className="text-gray-600 mb-4">{plan.desc}</p>
-
-              {/* Slider */}
+             
               <div className="mb-4">
 
                 <div className="text-xl font-semibold mt-2 mb-2 text-gray-800">
                   ₹{calculatePrice(plan.name, sliderValues[plan.name])}{' '}
                   <span className="text-sm text-gray-500">/Yearly</span>
                 </div>
-                
+                 {/* Slider */}
                 <input
                   type="range"
                   min={100}

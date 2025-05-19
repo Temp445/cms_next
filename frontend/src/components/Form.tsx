@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { SendHorizontal, Mails, PhoneCall, MapPinned  } from 'lucide-react';
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
@@ -11,9 +11,7 @@ const Form: React.FC = () => {
   const [emailError, setEmailError] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ 
 
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]{2,6}\.[a-zA-Z]{2,6}$/;
 
@@ -131,8 +129,7 @@ const Form: React.FC = () => {
                 type="text"
                 name="location"
                 placeholder="Location"
-                className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full focus:outline-none focus:ring-2 focus:ring-red-100"
-              />
+                className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full focus:outline-none focus:ring-2 focus:ring-red-100" />
 
 
               <label className="lg:text-lg font-medium">Queries : </label>
@@ -140,8 +137,7 @@ const Form: React.FC = () => {
                 name="queries"
                 placeholder="Queries *"
                 className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full h-24 focus:outline-none focus:ring-2 focus:ring-red-100"
-                required
-              ></textarea>
+                required ></textarea>
 
               <button
                 type="submit"
