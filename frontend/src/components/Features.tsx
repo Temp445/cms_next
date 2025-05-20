@@ -70,7 +70,7 @@ const Features = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-600">
             What We Offer
           </h2>
-          <p className="md:text-lg text-slate-600 max-w-5xl mx-auto">
+          <p className="md:text-lg text-slate-600 max-w-5xl mx-auto text-justify md:text-center">
             ACE CMS is a smart calibration management system that streamlines every step—from data import to audit prep—so you can stay compliant, save time, and keep every instrument tracked and up to date, wherever you are.
           </p>
         </div>

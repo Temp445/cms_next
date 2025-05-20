@@ -6,29 +6,27 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: 'Sarah Johnson',
-    position: 'CEO, Tech Innovations',
-    quote: 'This product has completely transformed our workflow and increased our productivity by 200%.',
-    rating: 5
+    name: 'Praveena',
+    position: 'Asahi India Glass Ltd',
+    quote: 'Our company values the precision and reliability of this calibration system, which is essential to maintaining our quality standards.',
   },
   {
     id: 2,
-    name: 'Michael Chen',
-    position: 'Lead Developer, CodeCraft Solutions',
-    quote: 'An incredible tool that seamlessly integrates with our existing systems. Highly recommended!',
-    rating: 5
+    name: 'Arun',
+    position: 'Wonjin Autoparts India Pvt Ltd',
+    quote: 'Implementing this system has substantially reduced the time and errors associated with our calibration procedures, contributing to smoother daily operations.',
   },
   {
     id: 3,
-    name: 'Emily Rodriguez',
-    position: 'Marketing Director, Global Brands',
-    quote: 'The intuitive design and powerful features make this the best solution we\'ve ever used.',
-    rating: 4
+    name: 'Praveen',
+    position: 'RANE TRW STEERING SYSTEMS Pvt Ltd',
+    quote: 'Since implementing this solution, our calibration workflows have become markedly more efficient. The system’s reliability and ease of use have exceeded our expectations.',
   }
 ];
 
 export default function TestimonialCarousel() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -39,36 +37,49 @@ export default function TestimonialCarousel() {
   };
 
   useEffect(() => {
+    if (isHovered) return;
+
     const interval = setInterval(() => {
       nextTestimonial();
-    }, 5000); 
+    }, 4000);
 
-    return () => clearInterval(interval); 
-  }, []);
+    return () => clearInterval(interval);
+  }, [isHovered]);
 
   const { name, position, quote } = testimonials[currentTestimonial];
 
   return (
-    <div className='bg-gradient-to-bl from-violet-200 to-blue-200 py-10 px-2 md:px-10'>
-      <h1 className='text-center text-2xl md:text-3xl font-bold pb-5 text-gray-700'>Authentic Customer Feedback</h1>
-      <div className="max-w-4xl mx-auto p-4 md:p-6 bg-gray-100 rounded-lg shadow-lg">
+    <div
+      className='bg-gradient-to-bl from-violet-200 to-blue-200 py-10 px-2 md:px-10'
+    >
+      <h1 className='text-center text-2xl md:text-3xl font-bold pb-5 text-gray-700'>
+        Authentic Customer Feedback
+      </h1>
+
+      <div
+        className="max-w-4xl mx-auto p-4 md:p-6 bg-gray-100 rounded-lg shadow-lg md:hover:scale-105"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <div className="relative">
           <button 
             onClick={prevTestimonial} 
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full md:p-2"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2  hidden md:block hover:bg-gray-200 rounded-full md:p-2"
           >
             <ChevronLeft className="w-6 h-6 text-gray-600" />
           </button>
           <button 
             onClick={nextTestimonial} 
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full md:p-2"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 hidden md:block  hover:bg-gray-200 rounded-full md:p-2"
           >
             <ChevronRight className="w-6 h-6 text-gray-600" />
           </button>
 
           <div className="text-center py-2 md:py-8 px-4">
             <Quote className="mx-auto mb-4 md:w-12 md:h-12 text-gray-300" />
-            <p className="text-sm md:text-lg lg:text-xl text-gray-700 mb-4 px-1 md:px-5">&quot;{quote}&quot;</p>
+            <p className="text-sm md:text-lg lg:text-xl text-gray-700 mb-4 px-1 md:px-5">
+              &quot; {quote} &quot;
+            </p>
             <div>
               <h3 className="text-base md:text-xl font-semibold text-gray-900">{name}</h3>
               <p className="text-gray-500 text-xs md:text-base">{position}</p>
@@ -81,7 +92,7 @@ export default function TestimonialCarousel() {
             <button
               key={index}
               onClick={() => setCurrentTestimonial(index)}
-              className={`w-2 h-2 md:w-3 md:h-3 mx-1 rounded-full ${
+              className={`w-2 h-2 md:w-5 md:h-1 mx-1 rounded-full ${
                 index === currentTestimonial ? 'bg-blue-500' : 'bg-gray-300'
               }`}
             />

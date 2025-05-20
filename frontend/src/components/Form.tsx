@@ -142,7 +142,7 @@ const Form: React.FC = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-blue-400 text-white px-4 py-2 rounded hover:bg-green-500 flex gap-3 md:text-lg"
+                className="bg-blue-400 text-white py-1 px-3 md:px-4 md:py-2 rounded hover:bg-green-500 flex gap-3 md:text-lg"
               >
                 {loading ? "Sending" : "Send"}
                 <SendHorizontal className="mt-1 w-4 h-4 md:mt-1.5 " />

@@ -64,7 +64,7 @@ const Clients: React.FC = () => {
               <Image
                 src={logo}
                 alt={`Client Logo ${index + 1}`}
-                className="w-32 h-20 mx-5 object-contain border border-gray-100 rounded-lg shadow-md p-3 bg-white mt-5 mb-5 transition-transform duration-300 ease-in-out hover:scale-110 z-0"
+                className="w-32 h-16 md:h-20 mx-5 object-contain border border-gray-100 rounded-lg shadow-md p-3 bg-white mt-5 mb-5 transition-transform duration-300 ease-in-out hover:scale-110 z-0"
               />
             </div>
           ))}
@@ -82,7 +82,7 @@ const Clients: React.FC = () => {
               <Image
                 src={logo}
                 alt={`Client Logo ${half + index + 1}`}
-                className="w-32 h-20 mx-5 object-contain border border-gray-100 rounded-lg shadow-md p-3 bg-white mt-5 mb-5 transition-transform duration-300 ease-in-out hover:scale-110 z-0"
+                className="w-32 h-16 md:h-20 mx-5 object-contain border border-gray-100 rounded-lg shadow-md p-3 bg-white mt-5 mb-5 transition-transform duration-300 ease-in-out hover:scale-110 z-0"
               />
             </div>
           ))}
